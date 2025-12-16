@@ -1,0 +1,430 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Sidebar Container */
+.sidebarContainer {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 220px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    z-index: 10;
+}
+
+.sidebarButton {
+    width: 100%;
+}
+
+.sidebarLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.sidebarImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.sidebarLink:hover {
+    background-color: #0056b3;
+}
+
+.sidebarLink:active {
+    background-color: #004085;
+}
+
+.sidebarLink:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}
+
+/* Form Container */
+.formContainer {
+    min-width: 300px;
+    max-width: 400px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    margin: 0 auto 40px auto;
+}
+
+.formContainer form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formContainer h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.formContainer p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.formInput,
+.formText {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.formInput label,
+.formText label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.formInput input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+
+.formInput input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.formText textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: inherit;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+}
+
+.formText textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.formButton {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.formButton button {
+    width: 100%;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formButton button:hover {
+    background-color: #0056b3;
+}
+
+.formButton button:active {
+    background-color: #004085;
+}
+
+.formButton button:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}
+
+/* Image Gallery */
+.imageGallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+.galleryHeading {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #000000;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    letter-spacing: 0.04em;
+}
+
+.galleryTitle {
+    text-align: center;
+    font-size: 1.15rem;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    color: #3a365a;
+    font-weight: 600;
+}
+
+.galleryItem {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galleryItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.galleryImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.galleryText {
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 40px);
+    flex: 1;
+}
+
+/* Card Component */
+.card {
+    background-color: #fafafc;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Card Header */
+.card-header {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.name {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #000000;
+}
+
+/* Card Info Section */
+.card-info {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+    gap: 60px;
+}
+
+.major,
+.university {
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+}
+
+/* Card Image */
+.card-image,
+.book-image {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Card Footer */
+.card-footer,
+.card-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.button:active {
+    background-color: #004085;
+}
+
+.button:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+        padding-right: 10px;
+    }
+
+    .sidebarContainer {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 100%;
+        min-width: auto;
+        margin-bottom: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sidebarButton {
+        flex: 1;
+        min-width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .name {
+        font-size: 24px;
+    }
+
+    .card-info {
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .major,
+    .university {
+        font-size: 14px;
+    }
+
+    .card-image,
+    .book-image {
+        margin-bottom: 20px;
+    }
+
+    .profile-image {
+        max-width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        padding: 14px 24px;
+    }
+
+    .imageGallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .galleryImage {
+        height: 150px;
+    }
+}
+
+@media (max-width: 320px) {
+    .name {
+        font-size: 20px;
+    }
+
+    .major,
+    .university {
+        font-size: 13px;
+    }
+
+    .imageGallery {
+        grid-template-columns: 1fr;
+    }
+}

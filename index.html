@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card - Rahmeh Amer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="pageWrapper">
+        <main class="container">
+            <article class="card">
+                <header class="card-header">
+                    <h1 class="name">Rahmeh Amer</h1>
+                </header>
+                
+                <section class="card-info">
+                    <p class="major">Major: MIS</p>
+                    <p class="university">University: Jordan University</p>
+                </section>
+                
+                <image class="book-image">
+                    <img src="https://media.licdn.com/dms/image/v2/D4E12AQFTIt0jXoCQiw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1704992896594?e=1767225600&v=beta&t=EawVRDsOV2eDf6NR2G04v_C5yHnr6ejvwUW9HcLcVfU" alt="Profile image of Rahmeh Amer" class="profile-image">
+                </figure>
+                
+                <footer class="card-button"">
+                    <a href="#" class="button">More info</a>
+                </footer>
+            </article>
+        </main>
+    </div>
+    
+    <section class="imageGallery">
+    <h2 class="galleryHeading">Image Library</h2>
+    <div class="galleryItem">
+        <img src="https://ahu.edu.jo/Admin_Site/Articles/Images/316/12589/Gal/bf59897a-f8d9-4319-b4e8-768f42c21aaf123.jpg" alt="Campus View" class="galleryImage">
+        <h3 class="galleryTitle">Campus View</h3>
+        <p class="galleryText">A scenic look at campus grounds.</p>
+    </div>
+    <div class="galleryItem">
+        <img src="https://marketplace.canva.com/MADA0PdewAQ/1/thumbnail_large-1/canva-graduation-day-MADA0PdewAQ.jpg" alt="Graduation Day" class="galleryImage">
+        <h3 class="galleryTitle">Graduation Day</h3>
+        <p class="galleryText">Students celebrating their graduation.</p>
+    </div>
+    <div class="galleryItem">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgBp0-dxpNTkWD0dLZEYTEpxOp0RF8Dr0MIA&s" alt="Student Collaboration" class="galleryImage">
+        <h3 class="galleryTitle">Student Collaboration</h3>
+        <p class="galleryText">Group project in progress.</p>
+    </div>
+    <div class="galleryItem">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYi-KDmKWL6rxL-8mZveYGbwWUcOxoYjFoew&s" alt="University Building" class="galleryImage">
+        <h3 class="galleryTitle">University Building</h3>
+        <p class="galleryText">Modern campus architecture.</p>
+    </div>
+    <div class="galleryItem">
+        <img src="https://see-edu.news/wp-content/uploads/2021/10/skynews-university-students_5048838-1140x570.jpg" alt="University Life" class="galleryImage">
+        <h3 class="galleryTitle">University Life</h3>
+        <p class="galleryText">Everyday student activities.</p>
+    </div>
+    <div class="galleryItem">
+        <img src="https://studyfans.com/_next/image?url=https%3A%2F%2Fbackend.studyfans.com%2Fstorage%2Fmedia%2FPostTranslations%2Fimage%2F1192%2FgH64UT3RIIqdDo6U4rHU5AigpdFaAnZNtJu1STul.webp&w=1080&q=80" alt="Study Community" class="galleryImage">
+        <h3 class="galleryTitle">Study Community</h3>
+        <p class="galleryText">A welcoming study environment.</p>
+    </div>
+</section>
+    
+    <section class="sidebarContainer">
+        <div class="sidebarButton">
+            <a href="#" class="sidebarLink">
+                <img src="https://media.licdn.com/dms/image/v2/D4E12AQFTIt0jXoCQiw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1704992896594?e=1767225600&v=beta&t=EawVRDsOV2eDf6NR2G04v_C5yHnr6ejvwUW9HcLcVfU" alt="Rahmeh Amer" class="sidebarImage">
+                <span>Rahmeh Amer</span>
+            </a>
+        </div>
+        <div class="sidebarButton">
+            <a href="#" class="sidebarLink">Profile</a>
+        </div>
+        <div class="sidebarButton">
+            <a href="#" class="sidebarLink">Dashboard</a>
+        </div>
+        <div class="sidebarButton">
+            <a href="#" class="sidebarLink">Courses</a>
+        </div>
+        <div class="sidebarButton">
+            <a href="#" class="sidebarLink">More</a>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+    <section class="formContainer">
+        <form>
+            <h2>Send your question</h2>
+            <p>Please ask your question below, make sure it is short but clear.</p>
+            <div class="formInput">
+                <label for="fullName">Full name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+            </div>
+            <div class="formInput">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="formText">
+                <label for="question">Question</label>
+                <textarea id="question" name="question" placeholder="Enter your question here..." rows="5" required></textarea>
+            </div>
+            <div class="formButton">
+                <button type="submit">Submit your question</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
